@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- Prevent pinch zoom -->
+    <title>Olarewaju</title>
+    <meta name="description" content="Frontend Developer & UI/UX Enthusiast - Crafting beautiful, responsive, and user-centric web experiences">
+    <meta name="keywords" content="frontend developer, UI/UX, web development, portfolio, Techwaju">
+    <meta name="author" content="Techwaju">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Olarewaju - Frontend Developer & UI/UX Enthusiast">
+    <meta property="og:description" content="Crafting beautiful, responsive, and user-centric web experiences">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aquamarine-belekoy-c453de.netlify.app/">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo .png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Preload key images for performance -->
+    <link rel="preload" href="logo.png" as="image">
+    <link rel="preload" href="coder image.png" as="image">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <a href="#hero" class="logo">
+            <img src="logo .png" alt="Techwaju Logo" class="logo-img">
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li><a href="#projects"><i class="fas fa-folder"></i> Projects</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li class="mobile-theme-switch">
+                <div class="theme-switch-wrapper">
+                    <input type="checkbox" id="theme-toggle-mobile" aria-label="Toggle light and dark theme">
+                    <label class="theme-switch" for="theme-toggle-mobile">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <!-- Mobile Nav Overlay -->
+        <div class="nav-overlay"></div>
+
+        <section id="hero" class="hero section" aria-labelledby="hero-title">
+            <div id="hero-particles"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 id="hero-title" data-animation>Hello, I'm Techwaju</h1>
+                    <p class="subtitle" data-animation>Frontend Developer & UI/UX Enthusiast</p>
+                    <p class="description" data-animation>I craft beautiful, responsive, and user-centric web experiences. Let's build something amazing together.</p>
+                    <a href="#projects" class="btn" data-animation>View My Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-image-container">
+                    <img src="newhome img.jpg" alt="Techwaju profile photo" class="hero-image" data-animation loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <h2 class="section-title" id="about-title" data-animation>About Me</h2>
+            <div class="about-content" data-animation>
+                <div class="about-img"><img src="me .jpg" alt="Techwaju photo" loading="lazy"></div>
+                <div class="about-text">
+                    <p>Hello! I'm a front-end developer and UI/UX enthusiast driven by a passion for creating seamless and engaging digital experiences. My expertise lies in transforming complex problems into intuitive, beautiful, and responsive web applications.</p>
+                    <p>I thrive on bringing ideas to life with clean, efficient code using modern technologies like React and Vue.js. Beyond the screen, I'm constantly exploring new tech trends and contributing to the developer community to stay at the forefront of innovation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section" aria-labelledby="services-title">
+            <h2 class="section-title" id="services-title" data-animation>What I Offer</h2>
+            <div class="services-grid">
+                <div class="service-card" data-animation>
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-desktop service-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-overlay">
+                        <h3>Frontend Development</h3>
+                        <p>Building responsive and interactive user interfaces with modern tools to ensure your website looks and feels great on all devices.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-animation>
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-cogs service-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-overlay">
+                        <h3>SPA Development</h3>
+                        <p>Developing fast, dynamic Single Page Applications using modern frameworks like React and Vue.js for a seamless, app-like user experience.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-animation>
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-server service-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-overlay">
+                        <h3>Backend & APIs</h3>
+                        <p>Creating robust server-side logic and RESTful APIs with Node.js to power scalable and efficient web application backends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <h2 class="section-title" id="projects-title" data-animation>My Work</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-animation>
+                    <img class="project-img" src="image 1.jpeg" alt="Project One screenshot" width="400" height="225" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Project One</h3>
+                            <p>A responsive landing page built with HTML, CSS, and JavaScript.</p>
+                            <a href="https://symphonious-cascaron-220c77.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animation>
+                    <img class="project-img" src="image 2.jpeg" alt="Project Two screenshot" width="400" height="225" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Project Two</h3>
+                            <p>Mobile app frontend built with HTML, CSS, and JavaScript.</p>
+                            <a href="https://684aeea3bc7208de9f25f077--vermillion-platypus-16db19.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animation>
+                    <img class="project-img" src="new image 3.jpeg" alt="Project Three screenshot" width="400" height="225" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Project Three</h3>
+                            <p>E-commerce website with HTML, CSS, and JavaScript.</p>
+                            <a href="https://lovely-malabi-ba89f7.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animation>
+                    <img class="project-img" src="project 4 .jpeg" alt="Project Four screenshot" width="400" height="225" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Project Four</h3>
+                            <p>Modern web application with responsive design and interactive features.</p>
+                            <a href="https://aquamarine-belekoy-c453de.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <h2 class="section-title" id="skills-title" data-animation>My Skills</h2>
+            <div class="skills-grid" data-animation>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-html5 skill-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="skill-overlay">
+                        <h3>HTML5</h3>
+                        <p>Semantic markup, accessibility, and SEO best practices.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-css3-alt skill-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="skill-overlay">
+                        <h3>CSS3</h3>
+                        <p>Responsive design, Flexbox, Grid, and modern animations.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-js skill-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="skill-overlay">
+                        <h3>JavaScript</h3>
+                        <p>ES6+, DOM manipulation, and asynchronous programming.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-react skill-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="skill-overlay">
+                        <h3>React</h3>
+                        <p>Functional components, Hooks, and state management.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-vuejs skill-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="skill-overlay">
+                        <h3>Vue.js</h3>
+                        <p>Composition API, Vuex, and component architecture.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-node-js skill-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="skill-overlay">
+                        <h3>Node.js</h3>
+                        <p>Building server-side applications and RESTful APIs with Express.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-git-alt skill-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="skill-overlay">
+                        <h3>Git & GitHub</h3>
+                        <p>Version control, branching, and collaborative workflows.</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fab fa-figma skill-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="skill-overlay">
+                        <h3>Figma</h3>
+                        <p>High-fidelity mockups, prototyping, and design systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <h2 class="section-title" id="contact-title" data-animation>Get In Touch</h2>
+            <div class="contact-container" data-animation>
+                <ul class="contact-methods">
+                    <li><a href="tel:+2347084811507" class="contact-link" aria-label="Book a call with me">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>Book a Call</span>
+                    </a></li>
+                    <li><a href="mailto:olarewajuatanda76@gmail.com?subject=Website%20Inquiry" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Send me an email (opens in a new tab)">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>Email</span>
+                    </a></li>
+                    <li><a href="https://linkedin.com/in/your-profile-url" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View my LinkedIn profile (opens in a new tab)">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a></li>
+                    <li><a href="https://github.com/olarewaju700" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View my GitHub profile (opens in a new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/waylon_porch1/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View my Instagram profile (opens in a new tab)">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a></li>
+                    <li><a href="https://x.com/OlarewajuAtand5" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View my Twitter profile (opens in a new tab)">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <span>Twitter/X</span>
+                    </a></li>
+                    <li><a href="https://facebook.com/yourhandle" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View my Facebook profile (opens in a new tab)">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a></li>
+                    <li><a href="https://684aeea3bc7208de9f25f077--vermillion-platypus-16db19.netlify.app/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="View my Netlify profile (opens in a new tab)">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                        <span>Netlify</span>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-about" data-animation>
+                        <a href="#hero" class="footer-logo"><img src="logo .png" alt="Techwaju Logo" class="logo-img"></a>
+                        <p>Crafting beautiful, responsive, and user-centric web experiences. Let's build something amazing together.</p>
+                    </div>
+                    <div class="footer-links" data-animation>
+                        <h4>Quick Links</h4>
+                        <ul class="footer-nav">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social" data-animation>
+                        <h4>Connect With Me</h4>
+                        <div class="footer-socials">
+                            <a href="https://github.com/olarewaju700" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/your-profile-url" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/OlarewajuAtand5" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/waylon_porch1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom" data-animation><p>&copy; 2025 Techwaju. Crafted with <i class="fas fa-heart" aria-hidden="true"></i> and code.</p></div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Theme Toggle -->
+    <div class="theme-switch-wrapper desktop-theme-switch">
+        <input type="checkbox" id="theme-toggle" aria-label="Toggle light and dark theme">
+        <label class="theme-switch" for="theme-toggle">
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
+        </label>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" id="back-to-top-btn" aria-label="Go to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+
+           <script src="app.js"></script>
+</body>
+</html>
